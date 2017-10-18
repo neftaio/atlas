@@ -126,7 +126,7 @@ server.route({
     method: 'GET',
     path: config.app.routePrefix || '/',
     handler: function (request, reply) {
-        reply('oh, hai');
+        reply('oh, hai hue');
     }
 });
 

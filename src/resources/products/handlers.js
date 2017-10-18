@@ -32,7 +32,8 @@ class ProductsHandler {
         //
         // Pagination
         //
-        let perPage = 200; // Default
+        // let perPage = 200; // Default
+        let perPage = 500; // Default
         let page = 0; // Default (IMPORTANT: 0 internally corresponds to 1 in request!)
 
         if (request.query.perPage) {
@@ -213,19 +214,19 @@ class ProductsUploadHandler {
                             sku: row['sku'],
                             name: {
                                 en: row['name'],
-                                pt: row['name']
+                                es: row['name']
                             },
                             description: {
                                 en: row['description'],
-                                pt: row['description']
+                                es: row['description']
                             },
                             pricing: {
                                 currency: row['currency'],
-                                list: row['listPrice'],
-                                retail: row['retailPrice'],
-                                vat: row['vat']
+                                list: parseFloat(row['listPrice']),
+                                retail: parseFloat(row['retailPrice']),
+                                vat: parseInt(row['vat'])
                             },
-                            stock: row['stock']
+                            stock: parseInt(row['stock'])
                         });
                     }
                 })

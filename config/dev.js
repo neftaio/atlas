@@ -4,8 +4,8 @@ export default {
     app: {
         host: '0.0.0.0',
         port: 8000,
-        jwtKey: process.env.JWT_KEY,
-        defaultCurrency: 'EUR'
+        jwtKey: 'zEqUku5qXoER5crZdlKQ2S9+NyIcOJr18LIFwtvW2K4=',//process.env.JWT_KEY,
+        defaultCurrency: 'COP'
     },
     database: {
         servers: [
@@ -32,14 +32,14 @@ export default {
     },
     emails: {
         from: {
-            name: 'Nicistore.com',
-            email: 'vendas@nicistore.com'
+            name: 'ElParaísoRojo.com',
+            email: 'elparaisorojo.shop@gmail.com.com'
         }
     },
     storefront: {
-        label: 'nicistore.com',
+        label: 'elparaisorojo.com',
         baseUrl: 'http://localhost:3000',
-        defaultLocale: 'pt'
+        defaultLocale: 'es'
     },
     switchPayments: {
         enabled: true,

@@ -16,7 +16,7 @@ const EmailTemplate = {
     ACCOUNT_CREATED: {
         id: 'account.created',
         fileName: 'accountCreated.html',
-        subject: 'Confirme o seu email'
+        subject: 'Confirme su email'
     },
     ACCOUNT_PASSWORD_RESET: {
         id: 'account.reset',
@@ -26,17 +26,17 @@ const EmailTemplate = {
     ORDER_CREATED: {
         id: 'order.created',
         fileName: 'orderCreated.html',
-        subject: 'Obrigado pela sua encomenda!'
+        subject: 'Gracias por su orden!'
     },
     ORDER_PENDING_PAYMENT: {
         id: 'order.pendingPayment',
         fileName: 'orderPendingPayment.html',
-        subject: 'Encomenda a aguardar pagamento'
+        subject: 'Orden de pago en espera'
     },
     ORDER_PAID: {
         id: 'order.paid',
         fileName: 'orderPaid.html',
-        subject: 'Confirmação de Pagamento'
+        subject: 'Confirmación de Pago'
     }
 };
 

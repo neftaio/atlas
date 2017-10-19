@@ -12,7 +12,7 @@ config.logs.streams = [
 ];
 config.uploads.folder = '/uploads';
 config.uploads.baseUrl = 'elparaisorojo.com/files';
-config.storefront.baseUrl = 'https://elparaisorojo.com';
+config.storefront.baseUrl = 'http://elparaisorojo.com';
 config.switchPayments.baseUrl = 'https://api.switchpayments.com/v2';
 
 // Export

@@ -16,21 +16,21 @@
                                 <tr>
                                     <td valign="top">
                                         <h1 style="font-size:22px;margin-top:0">
-                                            Hola {{data.customerDetails.name}},
+                                            Olá {{data.customerDetails.name}},
                                         </h1>
                                         <p style="font-size: 18px">
-                                          Cuando se confirme el pago de su pedido, se enviará el mismo.
-                                          A continuación se muestra todos los detalles e instrucciones sobre el pago.
-                                      </p>
+                                            Quando for confirmado o pagamento da sua encomenda, procederemos ao envio da mesma.
+                                            Em baixo encontra todos os detalhes, bem como instruções sobre o pagamento.
+                                        </p>
                                         <p style="font-size: 18px">
-                                          Si tienes alguna pregunta, no dude en responder a este correo electrónico con sus preguntas.
+                                            Se tiver alguma questão, não hesite em responder a este e-mail com as suas dúvidas.
                                         </p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="text-align:center;">
                                         <h2 style="font-size:18px;margin-top:0">
-                                            ID de la Orden:<br>
+                                            ID da Encomenda:<br>
                                             {{data.order.id}}
                                         </h2>
                                     </td>
@@ -41,11 +41,11 @@
                                             <thead>
                                                 <tr>
                                                     <th align="left" width="325" bgcolor="#EAEAEA" style="font-size:13px;padding:5px 9px 6px 9px;line-height:1em">
-                                                        Datos de Facturación:
+                                                        Dados de Facturação:
                                                     </th>
                                                     <th width="10"></th>
                                                     <th align="left" width="325" bgcolor="#EAEAEA" style="font-size:13px;padding:5px 9px 6px 9px;line-height:1em">
-                                                        Método de Pago:
+                                                        Método de Pagamento:
                                                     </th>
                                                 </tr>
                                             </thead>
@@ -110,9 +110,9 @@
                                         <table cellspacing="0" cellpadding="0" border="0" width="100%">
                                             <thead>
                                                 <tr>
-                                                    <th align="left" width="325" bgcolor="#EAEAEA" style="font-size:13px;padding:5px 9px 6px 9px;line-height:1em">Datos de Envío:</th>
+                                                    <th align="left" width="325" bgcolor="#EAEAEA" style="font-size:13px;padding:5px 9px 6px 9px;line-height:1em">Dados de Envio:</th>
                                                     <th width="10"></th>
-                                                    <th align="left" width="325" bgcolor="#EAEAEA" style="font-size:13px;padding:5px 9px 6px 9px;line-height:1em">Método de Envío:</th>
+                                                    <th align="left" width="325" bgcolor="#EAEAEA" style="font-size:13px;padding:5px 9px 6px 9px;line-height:1em">Método de Envio:</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -131,7 +131,7 @@
                                                     </td>
                                                     <td>&nbsp;</td>
                                                     <td valign="top" style="font-size:12px;padding:7px 9px 9px 9px;border-left:1px solid #eaeaea;border-bottom:1px solid #eaeaea;border-right:1px solid #eaeaea">
-                                                        {{data.shippingDetails.name.es}}
+                                                        {{data.shippingDetails.name.pt}}
                                                         &nbsp;
                                                     </td>
                                                 </tr>
@@ -144,15 +144,15 @@
                                                     <th align="left" bgcolor="#EAEAEA" style="font-size:13px;padding:3px 9px">Item</th>
                                                     <th align="left" bgcolor="#EAEAEA" style="font-size:13px;padding:3px 9px">Ref</th>
                                                     <th align="center" bgcolor="#EAEAEA" style="font-size:13px;padding:3px 9px">Qt</th>
-                                                    <th align="right" bgcolor="#EAEAEA" style="font-size:13px;padding:3px 9px">Precio</th>
+                                                    <th align="right" bgcolor="#EAEAEA" style="font-size:13px;padding:3px 9px">Preço</th>
                                                 </tr>
                                             </thead>
                                             <tbody bgcolor="#F6F6F6">
                                                 {{#each data.checkout.cart.products}}
                                                 <tr>
                                                     <td align="left" valign="top" style="font-size:11px;padding:3px 9px">
-                                                        <a href="{{../base.storefrontUrl}}/es/products/{{id}}" style="color:#1e7ec8" target="_blank">
-                                                            {{details.name.es}}
+                                                        <a href="{{../base.storefrontUrl}}/pt/products/{{id}}" style="color:#1e7ec8" target="_blank">
+                                                            {{details.name.pt}}
                                                         </a>
                                                     </td>
                                                     <td align="left" valign="top" style="font-size:11px;padding:3px 9px">
@@ -173,12 +173,12 @@
                                                         Sub-total
                                                     </td>
                                                     <td align="right" style="padding:3px 9px">
-                                                        <span>{{data.checkout.subTotal}}&nbsp;COP</span>
+                                                        <span>{{data.checkout.subTotal}}&nbsp;€</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td colspan="3" align="right" style="padding:3px 9px">
-                                                        Tamaños
+                                                        Portes
                                                     </td>
                                                     <td align="right" style="padding:3px 9px">
                                                         <span>{{data.checkout.shippingCost}}&nbsp;€</span>
@@ -189,7 +189,7 @@
                                                         IVA
                                                     </td>
                                                     <td align="right" style="padding:3px 9px">
-                                                        <span>{{data.checkout.vatTotal}}&nbsp;COP</span>
+                                                        <span>{{data.checkout.vatTotal}}&nbsp;€</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -197,7 +197,7 @@
                                                         <strong>Total</strong>
                                                     </td>
                                                     <td align="right" style="padding:3px 9px">
-                                                        <strong><span>{{data.checkout.total}}&nbsp;COP</span></strong>
+                                                        <strong><span>{{data.checkout.total}}&nbsp;€</span></strong>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -209,7 +209,7 @@
                                     <td bgcolor="#EAEAEA" align="center" style="background:#eaeaea;text-align:center">
                                         <center>
                                             <p style="font-size:12px;margin:0">
-                                                Gracias por preferirnos,
+                                                Obrigado pela preferência,
                                                 <a href="{{base.storefrontUrl}}" style="color:#1e7ec8" target="_blank">
                                                     {{base.storefrontLabel}}
                                                 </a>

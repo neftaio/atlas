@@ -4,7 +4,9 @@ FROM node:4-onbuild
 RUN useradd --user-group --create-home --shell /bin/false app &&\
   npm install --global npm@latest
 
-# Default value, but will be overriden 
+Run chown -R app /var/log
+
+# Default value, but will be overriden
 # by whatever user or docker-compose provides
 ENV NODE_ENV=dev
 

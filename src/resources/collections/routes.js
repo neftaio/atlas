@@ -107,7 +107,7 @@ export default [
                     enabled: Joi.boolean().required(),
                     name: Joi.object({
                         en: Joi.string().required(),
-                        es: Joi.string().required()
+                        pt: Joi.string().required()
                     }).required(),
                     description: Joi.object().optional(),
                     tags: Joi.array().required(),

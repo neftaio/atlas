@@ -59,7 +59,7 @@ export default [
                     sku: Joi.string().required(),
                     name: Joi.object({
                         en: Joi.string().required(),
-                        es: Joi.string().required()
+                        pt: Joi.string().required()
                     }).required()
                 }
             }
@@ -109,11 +109,11 @@ export default [
                     sku: Joi.string().required(),
                     name: Joi.object({
                         en: Joi.string().required(),
-                        es: Joi.string().required()
+                        pt: Joi.string().required()
                     }).required(),
                     description: Joi.object({
                         en: Joi.string().required(),
-                        es: Joi.string().required()
+                        pt: Joi.string().required()
                     }).required(),
                     images: Joi.array({
                         url: Joi.string().required()
@@ -173,6 +173,9 @@ export default [
                 headers: Joi.object({
                     'authorization': Joi.string().required()
                 }).unknown(),
+                params: {
+                    productId: Joi.string().required().description('the id for the product'),
+                },
                 payload: {
                     resource: Joi.string().required(),
                     file: Joi.object().optional(),

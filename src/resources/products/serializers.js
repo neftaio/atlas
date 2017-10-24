@@ -13,11 +13,11 @@ class ProductSerializer {
         sku: Joi.string(),
         name: Joi.object({
             en: Joi.string(),
-            es: Joi.string()
+            pt: Joi.string()
         }),
         description: Joi.object({
             en: Joi.string(),
-            es: Joi.string()
+            pt: Joi.string()
         }),
         images: Joi.array({
             url: Joi.string()

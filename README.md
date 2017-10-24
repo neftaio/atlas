@@ -33,11 +33,11 @@ Storefront has a few more tricks up its sleeve ;)
 
 ## Requirements
 
-- [Node.js](https://nodejs.org) (v4.x LTS) + NPM
+- [Node.js](https://nodejs.org) (v4.x LTS) + NPM 
 - [Rethinkdb](http://rethinkdb.com/)
 
 ### Optional
-- [Yoonic Storefront](https://github.com/yoonic/nicistore)
+- [Yoonic Storefront](https://github.com/yoonic/nicistore) 
 
 ## Installation
 You can install it locally or use the [Docker](https://www.docker.com/) setup.
@@ -47,7 +47,7 @@ You can install it locally or use the [Docker](https://www.docker.com/) setup.
 `git clone https://github.com/yoonic/atlas.git`
 2. Install the dependencies
 `cd atlas && npm install`
-3. Install and Start [Rethinkdb](https://www.rethinkdb.com/) server
+3. Install and Start [Rethinkdb](https://www.rethinkdb.com/) server 
 - Navigate to `http://localhost:8080/#tables` (RethinkDB admin)
 - Create a database named `atlas`
 - In that database, create the following tables:
@@ -61,7 +61,7 @@ You can install it locally or use the [Docker](https://www.docker.com/) setup.
 4. Run it!
 `npm run dev`
 
-At this point, you should be have your local deploy of Atlas running on `http://localhost:8000`
+At this point, you should be have your local deploy of Atlas running on `http://localhost:8000` 
 
 ### Docker
 1. Download and install [Docker](https://docs.docker.com/engine/installation/)
@@ -69,7 +69,7 @@ At this point, you should be have your local deploy of Atlas running on `http://
 `git clone https://github.com/yoonic/atlas.git`
 3. Run Docker Compose
 `cd atlas & docker-compose up -d`
-Atlas will be running on `http://localhost:8000`
+Atlas will be running on `http://localhost:8000` 
 
 **Note:** Docker will save content to the docker/data folder.
 
@@ -90,7 +90,7 @@ In order to access Storefront's Admin and perform certain API calls, an Administ
 2. In a browser, navigate to `http://localhost:8080/#dataexplorer`
 3. Run the following query `r.db('atlas').table('Users').filter({email: '{YOUR_USER_EMAIL}'}).update({status: 'active', scope: ['admin']});` (don't forget to replace `{YOUR_USER_EMAIL}` with the email address of the account you created)
 
-<!-- ## Contacts
+## Contacts
 Comments, suggestions, doubts, flames, /dev/random, etc...
 - Email **andre [at] yoonic.net**
-- Twitter [@andreftavares](http://twitter.com/andreftavares) -->
+- Twitter [@andreftavares](http://twitter.com/andreftavares)

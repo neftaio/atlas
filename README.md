@@ -1,9 +1,9 @@
 # Welcome
 Atlas is an E-Commerce RESTful API.
 
-Pair it with [Yoonic E-Commerce Storefront](https://github.com/yoonic/nicistore) and you'll have your own e-commerce website running on NodeJS!
+Pair it with Yoonic E-Commerce Storefront and you'll have your own e-commerce website running on NodeJS!
 
-You can check out a live example at the [NICI Store](https://nicistore.com/en)
+You can check out a live example at the NICI Store
 
 ![Swagger API Documentation](http://i.imgur.com/WENl84g.png "Swagger API Documentation")
 
@@ -37,7 +37,7 @@ Storefront has a few more tricks up its sleeve ;)
 - [Rethinkdb](http://rethinkdb.com/)
 
 ### Optional
-- [Yoonic Storefront](https://github.com/yoonic/nicistore) 
+- Yoonic Storefront
 
 ## Installation
 You can install it locally or use the [Docker](https://www.docker.com/) setup.
@@ -89,8 +89,3 @@ In order to access Storefront's Admin and perform certain API calls, an Administ
 1. Create an account (either via the API or Storefront)
 2. In a browser, navigate to `http://localhost:8080/#dataexplorer`
 3. Run the following query `r.db('atlas').table('Users').filter({email: '{YOUR_USER_EMAIL}'}).update({status: 'active', scope: ['admin']});` (don't forget to replace `{YOUR_USER_EMAIL}` with the email address of the account you created)
-
-## Contacts
-Comments, suggestions, doubts, flames, /dev/random, etc...
-- Email **andre [at] yoonic.net**
-- Twitter [@andreftavares](http://twitter.com/andreftavares)
